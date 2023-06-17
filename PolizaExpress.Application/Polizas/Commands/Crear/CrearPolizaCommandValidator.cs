@@ -1,8 +1,7 @@
 using FluentValidation;
-using PolizaExpress.Application.Polizas.Commands.Crear;
 using PolizaExpress.Application.Polizas.Validators;
 
-namespace PolizaExpress.Application.Polizas.Commands.Radicar;
+namespace PolizaExpress.Application.Polizas.Commands.Crear;
 
 public class CrearPolizaCommandValidator : AbstractValidator<CrearPolizaCommand>
 {

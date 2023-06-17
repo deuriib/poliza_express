@@ -1,4 +1,20 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=eca825bf_002D4eb9_002D4f32_002Db1f7_002Dc5cbe29c58fb/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Crear_poliza_con_parametros_validos" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::FEC0BDA3-2E77-4A85-962A-52EACB65D389::net6.0::PolizaExpress.Domain.Tests.PolizaTests.Crear_poliza_con_parametros_validos&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::FEC0BDA3-2E77-4A85-962A-52EACB65D389::net6.0::PolizaExpress.Domain.Tests.PolizaTests.Crear_poliza_con_cliente_nulo&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::FEC0BDA3-2E77-4A85-962A-52EACB65D389::net6.0::PolizaExpress.Domain.Tests.PolizaTests.Poliza_Creation_ValidValorMaximoCubierto&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::FEC0BDA3-2E77-4A85-962A-52EACB65D389::net6.0::PolizaExpress.Domain.Tests.PolizaTests.Poliza_Creation_GeneratesNonEmptyNumeroPoliza&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::3281856F-56ED-4C20-A63D-85C000913C49::net6.0::PolizaExpress.SharedKernel.Tests.ClienteTests.Cliente_WithValidData_PropertiesAreSetCorrectly&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::3281856F-56ED-4C20-A63D-85C000913C49::net6.0::PolizaExpress.SharedKernel.Tests.ClienteTests.Cliente_WithEmptyNombre_ThrowsArgumentNullException&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::3281856F-56ED-4C20-A63D-85C000913C49::net6.0::PolizaExpress.SharedKernel.Tests.ClienteTests.Cliente_WithEmptyIdentificacion_ThrowsArgumentNullException&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::3281856F-56ED-4C20-A63D-85C000913C49::net6.0::PolizaExpress.SharedKernel.Tests.ClienteTests.Cliente_WithInvalidFechaNacimiento_ThrowsArgumentNullException&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::3281856F-56ED-4C20-A63D-85C000913C49::net6.0::PolizaExpress.SharedKernel.Tests.ClienteTests.Cliente_WithEmptyCiudad_ThrowsArgumentNullException&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::3281856F-56ED-4C20-A63D-85C000913C49::net6.0::PolizaExpress.SharedKernel.Tests.ClienteTests.Cliente_WithEmptyDireccion_ThrowsArgumentNullException&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::3281856F-56ED-4C20-A63D-85C000913C49::net6.0::PolizaExpress.SharedKernel.Tests.ClienteTests.Cliente_WithFechaNacimientoNotMeetingAgeRequirement_ThrowsInvalidOperationException&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::3281856F-56ED-4C20-A63D-85C000913C49::net6.0::PolizaExpress.SharedKernel.Tests.ClienteTests&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
 	
 	<s:Boolean x:Key="/Default/UserDictionary/Words/=Numero/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/UserDictionary/Words/=Poliza/@EntryIndexedValue">True</s:Boolean></wpf:ResourceDictionary>

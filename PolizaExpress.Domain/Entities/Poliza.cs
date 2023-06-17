@@ -1,6 +1,3 @@
-using MongoFramework;
-using MongoFramework.Attributes;
-using PolizaExpress.Domain.Events;
 using PolizaExpress.Domain.Events.Polizas;
 using PolizaExpress.SharedKernel;
 using PolizaExpress.SharedKernel.Helpers;
@@ -27,9 +24,12 @@ public class Poliza : BaseEntity, IAggregateRoot
         List<Cobertura> coberturas,
         Vehiculo vehiculo)
     {
+        ArgumentNullException.ThrowIfNull(cliente);
+        ArgumentNullException.ThrowIfNull(vehiculo);
+        
         Id = Guid.NewGuid();
         NumeroPoliza = PolizaHelper.GenerarNumeroPoliza();
-        Cliente = cliente;
+        Cliente =  cliente;
         Coberturas = coberturas;
         NombrePlan = plan;
         Vehiculo = vehiculo;
@@ -58,9 +58,8 @@ public class Poliza : BaseEntity, IAggregateRoot
             Vehiculo));
     }
     
-    private bool TieneVigencia()
+    public bool TieneVigencia()
     {
-        return FechaInicioVigencia <= DateTime.Now 
-               && FechaVencimiento >= DateTime.Now;
+        return FechaVencimiento >= DateTime.Now;
     }
 }

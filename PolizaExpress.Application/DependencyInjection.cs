@@ -1,7 +1,6 @@
 using FluentValidation;
 using Microsoft.Extensions.DependencyInjection;
 using PolizaExpress.Application.Polizas.Commands.Crear;
-using PolizaExpress.Application.Polizas.Commands.Radicar;
 using PolizaExpress.Domain.Events.Polizas;
 using PolizaExpress.SharedKernel;
 
