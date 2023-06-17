@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PolizaExpress.Domain", "PolizaExpress.Domain\PolizaExpress.Domain.csproj", "{23FA9BDD-0D63-440E-BE98-5D0C32988A7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PolizaExpress.SharedKernel", "PolizaExpress.SharedKernel\PolizaExpress.SharedKernel.csproj", "{370E8AFD-3F94-4916-BA8E-7465E9BF0A67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PolizaExpress.Infrastructure", "PolizaExpress.Infrastructure\PolizaExpress.Infrastructure.csproj", "{3C3FB6C5-B49B-461E-B6FA-700786BDB1FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PolizaExpress.Application", "PolizaExpress.Application\PolizaExpress.Application.csproj", "{884E205E-6EBE-4C4D-AF1C-E83515BC81B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PolizaExpress.Web.API", "PolizaExpress.Web.API\PolizaExpress.Web.API.csproj", "{D1677F9E-6A63-4F1F-AF9E-7837FB71E38D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2208B220-652B-4094-A612-1EDABCEA937A}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{23FA9BDD-0D63-440E-BE98-5D0C32988A7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23FA9BDD-0D63-440E-BE98-5D0C32988A7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23FA9BDD-0D63-440E-BE98-5D0C32988A7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23FA9BDD-0D63-440E-BE98-5D0C32988A7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{370E8AFD-3F94-4916-BA8E-7465E9BF0A67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{370E8AFD-3F94-4916-BA8E-7465E9BF0A67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{370E8AFD-3F94-4916-BA8E-7465E9BF0A67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{370E8AFD-3F94-4916-BA8E-7465E9BF0A67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C3FB6C5-B49B-461E-B6FA-700786BDB1FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C3FB6C5-B49B-461E-B6FA-700786BDB1FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C3FB6C5-B49B-461E-B6FA-700786BDB1FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C3FB6C5-B49B-461E-B6FA-700786BDB1FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{884E205E-6EBE-4C4D-AF1C-E83515BC81B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{884E205E-6EBE-4C4D-AF1C-E83515BC81B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{884E205E-6EBE-4C4D-AF1C-E83515BC81B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{884E205E-6EBE-4C4D-AF1C-E83515BC81B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1677F9E-6A63-4F1F-AF9E-7837FB71E38D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1677F9E-6A63-4F1F-AF9E-7837FB71E38D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1677F9E-6A63-4F1F-AF9E-7837FB71E38D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1677F9E-6A63-4F1F-AF9E-7837FB71E38D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

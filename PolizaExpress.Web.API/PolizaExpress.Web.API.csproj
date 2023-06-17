@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+        <UserSecretsId>c54614e7-a330-4a27-bead-6baa44600472</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.5.2" />
+        <PackageReference Include="MediatR" Version="12.0.1" />
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.18" />
+        <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.31.0" />
+        <PackageReference Include="MongoFramework" Version="0.29.0" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+        <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.31.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="..\.dockerignore">
+        <Link>.dockerignore</Link>
+      </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\PolizaExpress.Application\PolizaExpress.Application.csproj" />
+      <ProjectReference Include="..\PolizaExpress.Domain\PolizaExpress.Domain.csproj" />
+      <ProjectReference Include="..\PolizaExpress.Infrastructure\PolizaExpress.Infrastructure.csproj" />
+      <ProjectReference Include="..\PolizaExpress.SharedKernel\PolizaExpress.SharedKernel.csproj" />
+    </ItemGroup>
+
+</Project>

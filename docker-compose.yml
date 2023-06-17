@@ -1,0 +1,28 @@
+﻿version: '3.8'
+services:
+  poliza_express_api:
+    image: poliza_express/api
+    build:
+      context: .
+      dockerfile: PolizaExpress.Web.API/Dockerfile
+    ports:
+      - "5272:80"
+      - "7150:443"
+    depends_on: 
+        - poliza_express_db
+    links:
+      - poliza_express_db
+    networks:
+      - poliza_express
+  poliza_express_db:
+    image: mongo:6-jammy
+    restart: always
+    ports:
+      - "27017"
+    volumes:
+      - ./data:/data/db
+    networks: 
+        - poliza_express
+networks:
+  poliza_express:
+    driver: bridge

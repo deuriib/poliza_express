@@ -1,0 +1,32 @@
+# This is a generated file. Not intended for manual editing.
+version: "3.8"
+services:
+  poliza_express_api:
+    build:
+      context: "/Users/deuriib/Projects/PolizaExpress"
+      dockerfile: "PolizaExpress.Web.API/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "/riderDebugger/linux-arm64/dotnet/dotnet"
+    - "/riderDebugger/JetBrains.Debugger.Worker.exe"
+    - "--mode=server"
+    - "--frontend-port=57100"
+    - "--backend-port=57300"
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+      ASPNETCORE_URLS: "https://+:443;http://+:80"
+      RIDER_DEBUGGER_LOG_DIR: "/riderLogs"
+      RESHARPER_LOG_CONF: "/riderLogsConf/backend-log.xml"
+    image: "poliza_express/api:dev"
+    ports:
+    - "57003:57100"
+    - "57203:57300"
+    volumes:
+    - "/Users/deuriib/.aspnet/https:/root/.aspnet/https"
+    - "/Users/deuriib/.microsoft/usersecrets:/root/.microsoft/usersecrets"
+    - "/Users/deuriib/Projects/PolizaExpress/PolizaExpress.Web.API:/app:rw"
+    - "/Users/deuriib/.local/share/JetBrains/RiderRemoteDebugger/2023.1.2/LinuxArm64:/riderDebugger"
+    - "/Applications/Rider.app/Contents/bin:/riderLogsConf"
+    - "/Users/deuriib/Library/Logs/JetBrains/Rider2023.1/DebuggerWorker/JetBrains.Debugger.Worker.2023_6_16_22_42_14:/riderLogs:rw"
+    working_dir: "/app"
